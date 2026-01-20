@@ -17,6 +17,26 @@ header {
   background-color: rgba(255, 247, 237, 1);
   align-items: center;
   padding-inline: 5%;
+  font-weight: 600;
+}
+
+a.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #161616;
+}
+
+header a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 600;
+  font-size: large;
+  padding: 5px 20px;
+}
+
+header a:hover {
+  color: #161616;
+  text-decoration: underline;
 }
 
 nav {
@@ -69,8 +89,8 @@ nav {
 
 /* ABOUT PAGE */
 
-.about-container {
-}
+/* .about-container {
+} */
 
 .about-image {
   aspect-ratio: 1108/200;
@@ -123,4 +143,49 @@ nav {
 
 .vanImg {
   width: 50%;
+}
+
+/* HOST VANS */
+
+.host-van-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* align-items: center; */
+  /* border: red solid 2px; */
+}
+.host-van-container > h1 {
+  padding-inline: 25%;
+}
+
+.host-van-single {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline: 30px;
+  gap: 20px;
+  margin: auto;
+  width: 50%;
+  height: 150px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.host-van-single > img {
+  object-fit: fill;
+  max-width: 130px;
+  max-height: 117px;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  height: 75px;
+  color: rgba(170, 170, 170, 1);
+  background-color: rgba(37, 37, 37, 1);
 }
